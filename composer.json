@@ -1,5 +1,5 @@
 {
-    "name": "tanuki-code-generator",
+    "name": "nokapps-tech/tanuki-code-generator",
     "description": "Laravel code generator for quickly generating CRUD modules via artisan commands.",
     "license": "MIT",
     "authors": [
