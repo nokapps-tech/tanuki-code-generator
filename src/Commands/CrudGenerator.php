@@ -254,8 +254,8 @@ class CrudGenerator extends GeneratorCommand
 
         $this->info('Creating Views ...');
 
-        $tableHead = "\n";
-        $tableBody = "\n";
+        $tableHead = "";
+        $tableBody = "";
         $viewRows = "\n";
         $form = "\n";
 
