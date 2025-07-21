@@ -353,7 +353,7 @@ abstract class GeneratorCommand extends Command implements PromptsForMissingInpu
         ]);
 
         $attr = match ($this->options['stack']) {
-            'tailwind', 'livewire' => 'scope="col" class="py-3 pl-4 pr-3 text-left text-xs font-semibold uppercase tracking-wide text-gray-500"',
+            'tailwind', 'livewire' => 'scope="col" class="px-3 py-3 text-left text-xs font-semibold uppercase tracking-wide text-gray-500"',
             default => ''
         };
 
