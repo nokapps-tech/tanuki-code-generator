@@ -353,14 +353,14 @@ abstract class GeneratorCommand extends Command implements PromptsForMissingInpu
         ]);
 
         $attr = match ($this->options['stack']) {
-            'tailwind', 'livewire' => 'scope="col" class="px-3 py-3 text-left text-xs font-semibold uppercase tracking-wide text-gray-500"',
+            'tailwind', 'livewire' => 'scope="col" class="px-3 py-3 text-left text-xs font-semibold uppercase tracking-wide"',
             default => ''
         };
 
         return str_replace(
             array_keys($replace),
             array_values($replace),
-            $this->_getSpace(10).'<th '.$attr.'>{{title}}</th>'."\n"
+            $this->_getSpace(10).'<th '.$attr.'><flux:text variant="subtle" class="text-xs">{{title}}</flux:text></th>'."\n"
         );
     }
 
@@ -383,7 +383,7 @@ abstract class GeneratorCommand extends Command implements PromptsForMissingInpu
         return str_replace(
             array_keys($replace),
             array_values($replace),
-            $this->_getSpace(11).'<td '.$attr.'>{{ ${{modelNameLowerCase}}->{{column}} }}</td>'."\n"
+            $this->_getSpace(11).'<td '.$attr.'><flux:text>{{ ${{modelNameLowerCase}}->{{column}} }}</flux:text></td>'."\n"
         );
     }
 
