@@ -376,7 +376,7 @@ abstract class GeneratorCommand extends Command implements PromptsForMissingInpu
         ]);
 
         $attr = match ($this->options['stack']) {
-            'tailwind', 'livewire' => 'class="whitespace-nowrap px-3 py-4 text-sm text-gray-500"',
+            'tailwind', 'livewire' => 'class="whitespace-nowrap px-3 py-4 text-sm"',
             default => ''
         };
 
